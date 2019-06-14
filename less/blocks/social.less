@@ -1,0 +1,32 @@
+.social__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social__btn {
+  display: flex;
+
+  outline: none;
+
+  -webkit-tap-highlight-color: transparent;    
+
+  &:hover .social__icon,
+  &:focus .social__icon {
+    fill: #0d4b74;      
+  }
+
+  &:active .social__icon {
+    fill: fade(@dark-grey, 30%);          
+  }
+}
+
+.social__icon {
+  fill: #ffffff;    
+  transition: fill 0.1s linear;
+}

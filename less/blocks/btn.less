@@ -1,0 +1,49 @@
+.btn {
+  display: block;
+
+  font-weight: 700;
+  font-family: "OpenSans", "Arial", sans-serif;
+  text-align: center;
+  color: @dark-grey;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: @white;
+  border: 2px solid @dark-grey;
+  outline: none;
+  cursor: pointer;
+
+  transition: background-color 0.1s linear, color 0.1s linear, border-color 0.1s linear;
+
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover,
+  &:focus {
+    color: @white;
+
+    background-color: @dark-grey;
+  }
+
+  &:active {
+    color: fade(@white, 30%);
+  }
+
+  &--blue {
+    color: @white;
+
+    background-color: @light-green;
+    border-color: @light-green;
+
+    &:hover,
+    &:focus {
+      color: @white;
+
+      background-color: fade(@light-green, 70%);
+      border-color: fade(@light-green, 70%);
+    }
+
+    &:active {
+      color: fade(@white, 30%);
+    }
+  }
+}

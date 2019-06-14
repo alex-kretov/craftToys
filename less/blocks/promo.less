@@ -1,0 +1,132 @@
+.promo {
+  margin-bottom: 27px;
+
+  background-color: #fafafa;
+    //#fafafa
+}
+
+.promo__wrapper {
+  position: relative;
+
+      
+  padding-top: 70px;
+
+  background-image: url("../img/title-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top -19px;
+  background-size: 574px 372px;
+
+  @media @retina-dpi, @retina-dppx {
+    background-image: url("../img/title-mobile@2x.jpg");
+  }
+}
+
+.promo__title {
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 122px;
+
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+  color: @black;
+}
+
+.promo__btn-wrap {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.promo__btn {
+    font-size: 17px;
+    line-height: 20px;
+    padding: 14px 10px;
+}
+
+@media @tablet-widths {
+  .promo {
+    position: relative;
+
+    margin-bottom: 34px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -1px;
+      left: 0;
+      z-index: 50;
+
+      height: 50px;
+
+      background-image: url("../img/zig-zag-background.svg");      
+      background-repeat: repeat-x;    
+      background-position: center;
+      background-size: auto;        
+      
+    }
+  }
+
+  .promo__wrapper {
+    position: relative;
+    
+    min-height: 750px;  
+    padding-top: 153px;
+
+    background-image: url("../img/title-tablet@1x.jpg");
+    background-position: center top 0;    
+    background-size: 1150px 746px;   
+
+    .container();      
+
+    @media @retina-dpi, @retina-dppx {
+      background-image: url("../img/title-tablet@2x.jpg");
+    }
+  }
+
+  .promo__title {
+    margin-bottom: 173px;
+    
+    text-align: left;  
+    font-size: 43px;
+    line-height: 50px;
+  }
+  .promo__btn-wrap {
+    margin-right: 60%;
+    width: 30%;
+  }    
+    
+}
+
+
+  
+
+@media @desktop-widths {
+  .promo {
+    margin-bottom: 46px; 
+
+    &::after {
+      bottom: -10px;
+
+      height: 60px;       
+
+      background-size: auto;
+    }
+  }
+
+  .promo__wrapper {
+    background-image: url("../img/title-desktop@1x.jpg");
+    background-size: 1150px 746px;
+
+    @media @retina-dpi, @retina-dppx {
+      background-image: url("../img/title-desktop@2x.jpg");
+    }
+  }
+
+  .promo__title {
+    margin-bottom: 159px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+}

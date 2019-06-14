@@ -1,0 +1,57 @@
+.logo {
+  display: block;
+    
+  outline: none;
+
+  -webkit-tap-highlight-color: transparent;
+
+  &--header[href] {
+    cursor: pointer;
+
+    transition: opacity 0.1s linear;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &--header img {
+    display: block;
+    width: 127px;
+    height: 65px;
+  }
+
+  &--footer {
+    display: none;
+  }
+}
+
+@media @tablet-widths {
+  .logo {
+    &--header img {
+    width: 127px;
+    height: 65px;
+    }
+
+    &--footer {
+      display: block;
+
+      cursor: pointer;
+    }
+  }
+   
+}
+
+@media @desktop-widths {
+  .logo {
+    &--header img {
+      width: 149px;
+      height: 72px;
+    }
+  }
+}
